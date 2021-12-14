@@ -23,7 +23,7 @@ $(function () {
         var num = $('input[name="fonenumber"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-fonenumber').append(
-                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
+                `<input class="form-control w-100 mt-1" name="fonenumber" maxlength="11">`
             );
         }
     });
