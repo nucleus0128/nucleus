@@ -33,7 +33,7 @@ $(function () {
         var date = $('input[name="date"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
-        var number = $('input[name="number"]:checked').val();
+        var fonenumber = $('input[name="fonenumber"]:checked').val();
         $('#form-name').children().each(function (i, elm) {
             names += $(elm).val() + '、';
         })
