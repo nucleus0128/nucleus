@@ -5,22 +5,6 @@ $(function () {
             dateFormat: 'yy/mm/dd',
         });
     });
-    
-    $(function () {
-    // カレンダー
-    $(function () {
-        $('input[name="date02"]').datepicker({
-            dateFormat: 'yy/mm/dd',
-        });
-    });
-        
-        $(function () {
-    // カレンダー
-    $(function () {
-        $('input[name="date03"]').datepicker({
-            dateFormat: 'yy/mm/dd',
-        });
-    });
 
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
