@@ -31,7 +31,7 @@ $(function () {
 
         var msg = `希望日：${date}\n希望時間：${time}\n人数：${number}\n氏名：${names}\n電話番号：${tel}`;
         sendText(msg);
-
+        
         return false;
     });
 });
