@@ -20,7 +20,7 @@ $(function () {
      // 参加人数分の電話番号を生成
     $('#form-number').click(function () {
         $('#form-name').empty();
-        var num = $('input[name="number"]:checked').val();
+        var num = $('input[name="fonenumber"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
                 `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
@@ -39,7 +39,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}\n電話番号：${number}`;
+        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}\n電話番号：${fonenumber}`;
         sendText(msg);
 
         return false;
