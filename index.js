@@ -17,29 +17,17 @@ $(function () {
         }
     });
 
-     // 参加人数分の電話番号を生成
-    $('#form-fonenumber').click(function () {
-        $('#form-fonenumber').empty();
-        var num = $('input[name="fonenumber"]:checked').val();
-        for (i = 0; i < num; i++) {
-            $('#form-fonenumber').append(
-                `<input class="form-control w-100 mt-1" name="fonenumber" maxlength="11">`
-            );
-        }
-    });
-    
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
-        var fonenumber = $('input[name="fonenumber"]:checked').val();
         $('#form-name').children().each(function (i, elm) {
             names += $(elm).val() + '、';
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}\n電話番号：${fonenumber}`;
+        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
         sendText(msg);
 
         return false;
