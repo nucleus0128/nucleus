@@ -29,11 +29,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}<br>
-        \希望時間：${time}<br>
-        \n人数：${number}<br>
-        \n氏名：${names}<br>
-        \電話番号：${tel}`;
+        var msg = `希望日：${date}\n希望時間：${time}\n人数：${number}\n氏名：${names}<br>\n電話番号：${tel}`;
         sendText(msg);
 
         return false;
