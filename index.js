@@ -18,7 +18,7 @@ $(function () {
     });
 
      // 参加人数分の電話番号を生成
-    $('#form-number').click(function () {
+    $('#form-fonenumber').click(function () {
         $('#form-fonenumber').empty();
         var num = $('input[name="fonenumber"]:checked').val();
         for (i = 0; i < num; i++) {
