@@ -15,22 +15,12 @@
 
         <p class="mt-3">以下に予約情報を入力して送信ボタンを押してください！</p>
 
-        <p class="mt-3">第一希望日</p>
+        <p class="mt-3">希望日</p>
         <div>
-            <input type="date" name="calender01" size="10" maxlength="50">
-        </div>
-        
-        <p class="mt-3">第二希望日</p>
-        <div>
-            <input type="date" name="calender02" size="10" maxlength="50">
-        </div>
-        
-        <p class="mt-3">第三希望日</p>
-        <div>
-            <input type="date" name="calender03" size="10" maxlength="50">
+            <input class="form-control" name="date" maxlength="10">
         </div>
 
-       <p class="mt-3">人数</p>
+        <p class="mt-3">人数</p>
         <div id="form-number" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-secondary">
                 <input type="radio" name="number" value="1" autocomplete="off">1
@@ -50,10 +40,9 @@
         </div>
 
         <p class="mt-3">氏名</p>
-        <input type="text" name="text01" size="30" maxlength="50">
-        
-        <p class="mt-3">電話番号</p>
-        <input type="tel" name="tel01" size="30" maxlength="50">
+        <div id="form-name">
+            <input class="form-control w-100 mt-1" name="name" maxlength="10">
+        </div>
 
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
