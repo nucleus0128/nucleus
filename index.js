@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="text" maxlength="10">`
+                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
             );
         }
     });
@@ -31,7 +31,7 @@ $(function () {
 
         var msg = `希望日：${date}\n希望時間：${time}\n人数：${number}\n氏名：${names}\n電話番号：${tel}`;
         sendText(msg);
-        
+
         return false;
     });
 });
