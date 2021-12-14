@@ -19,10 +19,10 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        var date = $('input[name="date"]').val();
-        var time = $('input[name="time"]').val();
-        var number = $('input[name="number"]:checked').val();
-        var names = '';
+        var date = $('input[name="date"]').val();<br>
+        var time = $('input[name="time"]').val();<br>
+        var number = $('input[name="number"]:checked').val();<br>
+        var names = '';<br>
         var tel = $('input[name="tel"]').val();
         $('#form-name').children().each(function (i, elm) {
             names += $(elm).val() + '、';
