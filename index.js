@@ -34,7 +34,7 @@
         })
         names = names.slice(0, -1);
 
-        var msg = `・第一希望日：${date01}\n希望時間：${time01}\n人数：${number}\n氏名：${names}\n住所：${address}\n電話番号：${tel}`;
+        var msg = `・第一希望日：${date01}\n希望時間：${time01}\n・第二希望日：${date02}\n希望時間：${time02}\n・第三希望日：${date03}\n希望時間：${time03}\n人数：${number}\n氏名：${names}\n住所：${address}\n電話番号：${tel}`;
         sendText(msg);
 
         return false;
