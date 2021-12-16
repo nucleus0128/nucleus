@@ -27,6 +27,7 @@
         var time = $('input[name="time03"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
+        var text = $('input[name="address"]').val();
         var tel = $('input[name="tel"]').val();
         $('#form-name').children().each(function (i, elm) {
             names += $(elm).val() + '、';
