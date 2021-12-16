@@ -1,7 +1,7 @@
    $(function () {
     // カレンダー
     $(function () {
-        $('input[name="date01"]').datepicker({
+        $('input[name="date00"]').datepicker({
             dateFormat: 'yy/mm/dd',
         });
     });
@@ -19,8 +19,12 @@
 
     // 送信
     $('form').submit(function () {
-        var date = $('input[name="date"]').val();
-        var time = $('input[name="time"]').val();
+        var date = $('input[name="date01"]').val();
+        var time = $('input[name="time01"]').val();
+        var date = $('input[name="date02"]').val();
+        var time = $('input[name="time02"]').val();
+        var date = $('input[name="date03"]').val();
+        var time = $('input[name="time03"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
         var tel = $('input[name="tel"]').val();
