@@ -29,7 +29,7 @@
         var names = '';
         var address = $('input[name="address"]').val();
         var tel = $('input[name="tel"]').val();
-       　　var text = $('input[name="text"]').val();
+        var text = $('input[name="text"]').val();
         $('#form-name').children().each(function (i, elm) {
             names += $(elm).val() + '、';
         })
